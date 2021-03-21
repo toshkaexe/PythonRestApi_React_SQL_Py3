@@ -2,7 +2,7 @@
 To run application: Go to \fast
 ### `uvicorn main:app --reload`
 
-Open Postman for the page and use this page http://localhost:8000/users GET http://localhost:8000/users 
+Open Postman for the page and use this page http://localhost:8000/users GET http://localhost:8000/users oder user swagger http://localhost:8000/docs
 
 ## UI & Frontendentwicklung in React.js
 To run application: Go to \frontend
