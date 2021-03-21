@@ -1,10 +1,10 @@
-Backend
+## Backend
 To run application: Go to \fast
 uvicorn main:app --reload
 
 Open Postman for the page and use this page http://localhost:8000/users GET http://localhost:8000/users 
 
-#UI & Frontendentwicklung
+## UI & Frontendentwicklung
 To run application: Go to \frontend
 
 npm install and
