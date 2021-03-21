@@ -4,8 +4,11 @@ import schemas
 import models
 from database import engine, SessionLocal
 from sqlalchemy.orm import Session
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
+
 models.Base.metadata.create_all(engine)
 
 
@@ -20,7 +23,8 @@ def get_db():
 @app.post("/user")
 def create(request: schemas.Users, db: Session = Depends(get_db)):
     new_user = models.User(username=request.username,
-                           email=request.email, password=request.password)
+                           email=request.email, 
+                           password=request.password)
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
