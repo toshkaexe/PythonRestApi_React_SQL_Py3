@@ -29,12 +29,14 @@ def registation():
     for value in sql.execute("SELECT * FROM users"):
         print(value)
 
-#registation()
 
-def getUserNameByLogin(sql):
-    login = input('Enter log: ')
+
+def getUserNameByLogin(sql, login):
+    #login = input('Enter log: ')
     for value in sql.execute(f"SELECT username FROM users WHERE login='{login}'"):
         print(value)
 
-getUserNameByLogin(sql)
+#registation()
+userLogin = input('userLogin: ')
+getUserNameByLogin(sql, userLogin)
 
