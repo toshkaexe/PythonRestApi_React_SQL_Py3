@@ -1,3 +1,6 @@
+### Project description
+This is an example project about Python for the backend and JS, React.js for the frontend.
+The project was divided into 2 parts: The first part is about using FastAPI with connection to SQLite. The second part describes UI. MaterialUI and React.js are applied.
 ## Backend in python
 To run application: Go to \fast
 ### `uvicorn main:app --reload`
